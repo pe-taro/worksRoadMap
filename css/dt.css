@@ -1,0 +1,242 @@
+@import url(dt.css) screen and (max-width: 1025px);
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8vh; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+.main {
+  background-image: url(../img/background-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 16px;
+  height: 96vh; }
+
+header {
+  width: 100%;
+  height: 120px;
+  padding-top: 20px; }
+  header p {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 0.5px; }
+
+.headerText1, .headerText2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; }
+
+.headerText3 {
+  display: none; }
+
+header .headerText1 img {
+  height: 78px; }
+header .headerText2 img {
+  height: 100px;
+  position: relative;
+  top: -2rem; }
+header .headerText2 .img2 {
+  height: 80px; }
+
+main {
+  width: 100%; }
+  main .sc1 .container1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    main .sc1 .container1 .box1 {
+      width: 500px;
+      position: relative; }
+      main .sc1 .container1 .box1 img.top {
+        display: none; }
+      main .sc1 .container1 .box1 img.fukidashi {
+        height: 130px;
+        position: absolute;
+        top: -150px;
+        left: -70px;
+        z-index: 30; }
+      main .sc1 .container1 .box1 img.sumaho {
+        height: 250px;
+        position: absolute;
+        top: -20px;
+        left: -30px;
+        z-index: 20; }
+      main .sc1 .container1 .box1 img.paso {
+        height: 350px;
+        position: absolute;
+        top: -160px;
+        left: -50px;
+        z-index: 10; }
+    main .sc1 .container1 .textbox {
+      display: block;
+      width: auto;
+      height: auto;
+      margin-top: 32px;
+      border: solid 0.2rem #00b900;
+      position: relative;
+      top: -1rem;
+      background-color: white; }
+      main .sc1 .container1 .textbox .item {
+        display: flex;
+        margin: 1rem; }
+        main .sc1 .container1 .textbox .item img {
+          height: 25px; }
+        main .sc1 .container1 .textbox .item p {
+          margin: 0;
+          line-height: 2;
+          font-size: 0.8rem; }
+          main .sc1 .container1 .textbox .item p span {
+            background: linear-gradient(transparent 60%, #ffda07 0%); }
+  main .sc1 .swip {
+    display: none; }
+  main .sc1 .container2 {
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    main .sc1 .container2 .box0 {
+      display: none; }
+    main .sc1 .container2 p.text1 {
+      width: 500px;
+      margin: auto 0;
+      font-size: 26px;
+      line-height: 3;
+      text-align: right; }
+      main .sc1 .container2 p.text1 span {
+        background: linear-gradient(transparent 60%, #ffda07 0%); }
+    main .sc1 .container2 .sp {
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      color: #007E00; }
+      main .sc1 .container2 .sp img.arrow {
+        height: 120px;
+        position: relative;
+        top: 50px; }
+      main .sc1 .container2 .sp a {
+        text-decoration: none; }
+      main .sc1 .container2 .sp .box1 {
+        width: 180px; }
+        main .sc1 .container2 .sp .box1 img.qr {
+          width: 180px; }
+        main .sc1 .container2 .sp .box1 p.qrtx {
+          width: 150px;
+          height: 100px;
+          font-size: 10px;
+          margin: 0 auto;
+          color: black; }
+      main .sc1 .container2 .sp .box2 {
+        width: 160px;
+        margin-left: 1rem;
+        position: relative;
+        top: 10px; }
+        main .sc1 .container2 .sp .box2 .lineIcon {
+          display: flex; }
+          main .sc1 .container2 .sp .box2 .lineIcon img.linelogo {
+            height: 40px; }
+          main .sc1 .container2 .sp .box2 .lineIcon img.lineac2 {
+            height: 40px;
+            margin-left: 0.5rem; }
+      main .sc1 .container2 .sp p .linetext {
+        width: 150px;
+        font-size: 1rem; }
+    main .sc1 .container2 img.friend {
+      display: none; }
+
+footer {
+  display: block;
+  width: 100%;
+  background-color: #00b900;
+  height: 4vh;
+  position: static; }
+  footer a {
+    text-decoration: none;
+    color: #007E00; }
+  footer p.pr {
+    margin: 0;
+    margin-left: 50px;
+    line-height: 4vh; }
+
+/*# sourceMappingURL=dt.css.map */
+@media screen and (max-height: 761px) {
+  .main {
+    height: 730px; }
+
+  footer {
+    height: 30px; }
+    footer p.pr {
+      line-height: 30px; } }
+@media screen and (min-height: 762px) {
+  header {
+    height: 20vh; }
+    header .headerText1 {
+      height: 8vh; }
+    header .headerText2 {
+      height: 8vh; }
+
+  .main .sc1 .container1 {
+    height: 45vh; } }
+@media screen and (min-height: 800px) {
+  header {
+    height: 18vh; }
+    header .headerText1 {
+      height: 12vh; }
+    header .headerText2 {
+      height: 12vh; }
+
+  .main .sc1 .container1 {
+    height: 45vh; } }
+@media screen and (min-height: 1000px) {
+  header {
+    height: 30vh; }
+    header .headerText1 {
+      height: 15vh; }
+      header .headerText1 img {
+        height: 120px; }
+    header .headerText2 {
+      height: 15vh; }
+      header .headerText2 img.engineer {
+        height: 130px; }
+      header .headerText2 img.become {
+        height: 130px; }
+      header .headerText2 img.video {
+        height: 130px; }
+
+  .main .sc1 .container1 {
+    height: 45vh; } }
+@media screen and (min-height: 1250px) {
+  header {
+    height: 35vh; }
+    header .headerText1 {
+      height: 15vh; }
+      header .headerText1 img {
+        height: 130px; }
+    header .headerText2 {
+      height: 15vh; }
+      header .headerText2 img.engineer {
+        height: 150px; }
+      header .headerText2 img.become {
+        height: 140px; }
+      header .headerText2 img.video {
+        height: 160px; }
+
+  .main .sc1 .container1 {
+    height: 37vh; } }
+
+/*# sourceMappingURL=dt.css.map */
